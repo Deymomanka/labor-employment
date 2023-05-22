@@ -2,10 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
 import plotly.express as px
-import country_converter as coco
 import geopandas as gpd
 import matplotlib.pyplot as plt
-#from map_plotter import plot_map
 
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
