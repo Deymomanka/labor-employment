@@ -243,5 +243,5 @@ pages[selection]()
 
 st.sidebar.markdown('''
 ---
-Created with ❤️ by [Yuria](https://github.com/Deymomanka/).
+Created by [Yuria](https://github.com/Deymomanka/).
 ''')
