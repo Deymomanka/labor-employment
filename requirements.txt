@@ -1,6 +1,5 @@
 streamlit
 pandas
-plotly.graph_objs
-plotly.express
+plotly
 geopandas
 matplotlib.pyplot
