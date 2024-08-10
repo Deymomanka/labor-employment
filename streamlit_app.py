@@ -228,10 +228,10 @@ def page_four():
     
 # Define sidebar options
 pages = {
-    "Number of foreign workers by nationality (2021):": page_one,
-    "Number of Business Establishments and Foreign Workers by Industry (2021)": page_two,
-    "Number of foreign workers/Establishments Employing Foreign Workers by prefecture (2021)": page_three,
-    "2022 (Cooming soon)": page_four
+    "Number of foreign workers by nationality (2023):": page_one,
+    "Number of Business Establishments and Foreign Workers by Industry (2023)": page_two,
+    "Number of foreign workers/Establishments Employing Foreign Workers by prefecture (2023)": page_three,
+    "2024 (Cooming soon)": page_four
 }
 
 # Define the sidebar
