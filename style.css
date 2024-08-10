@@ -2,7 +2,7 @@
 /* Adapted from Zachary Blackwood */
 [data-testid="stSidebar"] {
     background-image: url(https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png);
-    background-size: 200px;
+    background-size: 150px;
     background-repeat: no-repeat;
     background-position: 4px 5px;
 }
