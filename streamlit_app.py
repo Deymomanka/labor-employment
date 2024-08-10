@@ -235,8 +235,7 @@ pages = {
 }
 
 # Define the sidebar
-st.sidebar.header()
-st.sidebar.header('Dashboard `version 1`')
+st.sidebar.title('Dashboard `version 1`')
 st.sidebar.title("Navigation")
 selection = st.sidebar.radio("Go to", list(pages.keys()))
 
