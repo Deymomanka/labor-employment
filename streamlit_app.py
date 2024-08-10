@@ -87,8 +87,8 @@ def page_two():
     #dfDC['Proportion'] = dfDC['Proportion'].astype(int)
     #dfDC.iloc[:, 1:] = dfDC.iloc[:, 1:].apply(lambda x: x.str.replace(',', '').astype(int))
     #dfDC['Proportion'] = dfDC['Proportion'].apply(lambda x: x.str.replace('%', '').astype(int))
-    #dfDC['Proportion'] = dfDC['Proportion'].str.replace(',', '').str.replace('%', '').astype(int) / 10
-    #dfDC['People'] = dfDC['People'].apply(lambda x: x.replace('\xa0', '')).astype(int)
+    dfDC['Proportion'] = dfDC['Proportion'].str.replace(',', '').str.replace('%', '').astype(int) / 10
+    dfDC['People'] = dfDC['People'].apply(lambda x: x.replace('\xa0', '')).astype(int)
 
     #~~~~~~~~~~~~~~~~~~~~~~Load the Data for Company
     dataDC2 = pd.read_csv("https://raw.githubusercontent.com/Deymomanka/labor-employment/main/byCompany.csv")
@@ -98,6 +98,7 @@ def page_two():
 
     #----------------Percentage of foreign workers in each industry
     st.markdown('### Percentage of foreign workers in each industry:')
+    dfDC['Proportion'].fillna(0, inplace=True)
     dfDC.loc[dfDC['Proportion'] < 2, 'Industry ENG'] = 'Other'
     dfDC = dfDC.groupby('Industry ENG').sum().reset_index()
     fig = go.Figure(data=[go.Pie(labels=dfDC['Industry ENG'], values=dfDC['Proportion'], hole=0.4)])
