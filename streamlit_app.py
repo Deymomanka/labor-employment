@@ -87,7 +87,7 @@ def page_two():
     #dfDC['Proportion'] = dfDC['Proportion'].astype(int)
     #dfDC.iloc[:, 1:] = dfDC.iloc[:, 1:].apply(lambda x: x.str.replace(',', '').astype(int))
     #dfDC['Proportion'] = dfDC['Proportion'].apply(lambda x: x.str.replace('%', '').astype(int))
-    dfDC['Proportion'] = dfDC['Proportion'].str.replace(',', '').str.replace('%', '').astype(int) / 10
+    dfDC['Proportion'] = dfDC['Proportion'].str.replace(',', '').str.replace('%', '').astype(float) / 10
     dfDC['People'] = dfDC['People'].apply(lambda x: x.replace('\xa0', '')).astype(int)
 
     #~~~~~~~~~~~~~~~~~~~~~~Load the Data for Company
