@@ -18,9 +18,9 @@ st.sidebar.header('Dashboard `version 1`')
 # Row A
 st.markdown('### Total')
 col1, col2, col3= st.columns(3)
-col1.metric("Number of foreign workers (2021)", "1,727,221 ")
-col2.metric("Number of Establishments (2021)", "285,080")
-col3.metric("Number of foreign workers (2022)", "1,822,725", " 95,504")
+col1.metric("Number of foreign workers (2023)", "2,048,675", "225,950 ")
+col2.metric("Number of Establishments (2023)", "318,775")
+col3.metric("Number of foreign workers (2023)", "1,822,725")
 
 
 def page_one():
