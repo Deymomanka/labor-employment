@@ -11,7 +11,7 @@ st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     
-st.sidebar.header('Dashboard `version 1`')
+# st.sidebar.header('Dashboard `version 1`')
 
 
 
@@ -235,7 +235,7 @@ pages = {
 }
 
 # Define the sidebar
-st.sidebar.title("Navigation")
+st.sidebar.header('Dashboard `version 1`')
 st.sidebar.title("Navigation")
 selection = st.sidebar.radio("Go to", list(pages.keys()))
 
