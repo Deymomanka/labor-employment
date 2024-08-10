@@ -115,7 +115,7 @@ def page_two():
 
     #----------------Percentage of Establishments Employing Foreign Workers
     st.markdown('### Percentage of Establishments Employing Foreign Workers:')
-    dfDC2.loc[dfDC2['Proportion'] < 2, 'Industry ENG'] = 'Other'
+    #dfDC2.loc[dfDC2['Proportion'] < 2, 'Industry ENG'] = 'Other'
     dfDC2 = dfDC2.groupby('Industry ENG').sum().reset_index()
     fig3 = go.Figure(data=[go.Pie(labels=dfDC2['Industry ENG'], values=dfDC2['Proportion'], hole=0.4)])
     #fig.update_layout(title='Industry Proportions')
