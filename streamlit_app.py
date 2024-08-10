@@ -24,7 +24,7 @@ col3.metric("Number of foreign workers (2022)", "1,822,725", " 95,504")
 
 
 def page_one():
-    st.title("Number of foreign workers by nationality/residency status (2021)")
+    st.title("Number of foreign workers by nationality/residency status (2023)")
     #st.write("This is the home page of our app. Use the sidebar to navigate to other pages.")
 
     dataNt = pd.read_csv('https://raw.githubusercontent.com/Deymomanka/labor-employment/main/LaborByNationality.csv')
@@ -235,6 +235,7 @@ pages = {
 }
 
 # Define the sidebar
+st.sidebar.title("Navigation")
 st.sidebar.title("Navigation")
 selection = st.sidebar.radio("Go to", list(pages.keys()))
 
